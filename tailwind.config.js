@@ -7,9 +7,6 @@ module.exports = {
         primary: '#FA4A0C',
         dark: '#252B42',
       },
-      backgroundImage: {
-        'logo-fb': "url('src/assets/images/fb_logo.png')",
-      },
     },
   },
   plugins: [],
