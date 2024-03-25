@@ -13,7 +13,7 @@
     </style>
   </head>
   <body class="bg-gray-50">
-    <div class="min-h-[100vh] bg-white mx-auto max-w-lg">
+    <div class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-lg lg:max-w-5xl">
       <!-- navbar -->
       <nav class="bg-white">
         <div class="flex justify-between items-center p-6">
@@ -23,7 +23,21 @@
               class="w-full h-full object-cover"
             />
           </div>
-          <div>
+          <div class="hidden lg:block">
+            <ul
+            class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap leading-5 gap-4 md:gap-8 md:px-4 md:py-3 font-semibold text-base"
+          >
+            <li class="max-md:w-full text-[#FA4A0C]">
+              <a href="/">Home</a>
+            </li>
+            <li class="max-md:w-full"><a href="#Product">Product</a></li>
+            <li class="max-md:w-full">
+              <a href="#faq">Faq</a>
+            </li>
+            <li class="max-md:w-full"><a href="#contact">Contact</a></li>
+          </ul>
+          </div>
+          <div class="lg:hidden">
             <button type="button">
               <img
                 src="./assets/images/menu.svg"
@@ -38,35 +52,40 @@
       <!-- hero -->
       <section
         id="hero"
-        class="bg-gray-100 min-h-[20rem] flex justify-center items-center flex-wrap gap-4 pt-10"
+        class="bg-gray-100 lg:bg-transparent min-h-[20rem] lg:pb-20 flex justify-center items-center flex-wrap gap-4 pt-10"
       >
-        <article>
+        <img src="./assets/images/hero-image.jpg" alt="hero-image" class="absolute -z-10 hidden lg:block lg:brightness-50">
+        <article class="lg:text-white lg:filter-none">
           <h5 class="text-[16px] font-bold leading-6 text-center">Food app</h5>
-          <h2 class="p-[10px] text-4xl font-bold text-center leading-[42.5px]">
+          <h2 class="p-[10px] text-4xl font-bold text-center leading-[42.5px] lg:px-40">
             Why stay hungry when you can order form Bella Onojie
           </h2>
           <h4 class="p-[10px] text-2xl leading-[38px] text-center mx-16">
             Download the bella onojie's food app now on
           </h4>
         </article>
-        <div class="w-full flex justify-center">
-          <button
-            class="bg-[#FA4A0C] text-white font-bold text-2xl leading-9 px-14 py-3 rounded-full"
-          >
-            Playstore
-          </button>
-        </div>
-        <div class="w-full flex justify-center">
-          <button
-            class="text-[#FA4A0C] border-[#FA4A0C] border-[1px] text-2xl leading-9 px-14 py-3 rounded-full"
-          >
-            App store
-          </button>
-        </div>
-        <div class="relative -top-24 -left-10">
-          <img src="./assets/images/phones.png" alt="phones" />
+        <div class="flex flex-wrap gap-4 lg:flex-nowrap lg:text-nowrap">
+          <div class="w-full flex justify-center">
+            <button
+              class="bg-[#FA4A0C] text-white font-bold text-2xl leading-9 px-14 py-3 rounded-full"
+            >
+              Playstore
+            </button>
+          </div>
+          <div class="w-full flex justify-center">
+            <button
+              class="text-[#FA4A0C] border-[#FA4A0C] lg:text-white lg:border-white border-[1px] text-2xl leading-9 px-14 py-3 rounded-full"
+            >
+              App store
+            </button>
+          </div>
         </div>
       </section>
+      <div class="bg-gray-100 max-w-lg lg:max-w-5xl lg:px-[20rem] lg:h-[20rem] lg:bg-white">
+        <div class="relative -top-10 -left-10 lg:-top-40">
+          <img src="./assets/images/phones.png" alt="phones" />
+        </div>
+      </div>
       <!-- /hero -->
 
       <section
