@@ -13,7 +13,9 @@
     </style>
   </head>
   <body class="bg-gray-50">
-    <div class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-lg md:max-w-full">
+    <div
+      class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-lg md:max-w-full"
+    >
       <!-- navbar -->
       <nav class="bg-white">
         <div class="flex justify-between items-center p-6">
@@ -25,17 +27,17 @@
           </div>
           <div class="hidden lg:block">
             <ul
-            class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap leading-5 gap-4 md:gap-8 md:px-4 md:py-3 font-semibold text-base"
-          >
-            <li class="max-md:w-full text-[#FA4A0C]">
-              <a href="/">Home</a>
-            </li>
-            <li class="max-md:w-full"><a href="#Product">Product</a></li>
-            <li class="max-md:w-full">
-              <a href="#faq">Faq</a>
-            </li>
-            <li class="max-md:w-full"><a href="#contact">Contact</a></li>
-          </ul>
+              class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap leading-5 gap-4 md:gap-8 md:px-4 md:py-3 font-semibold text-base"
+            >
+              <li class="max-md:w-full text-[#FA4A0C]">
+                <a href="/">Home</a>
+              </li>
+              <li class="max-md:w-full"><a href="#Product">Product</a></li>
+              <li class="max-md:w-full">
+                <a href="#faq">Faq</a>
+              </li>
+              <li class="max-md:w-full"><a href="#contact">Contact</a></li>
+            </ul>
           </div>
           <div class="lg:hidden">
             <button type="button">
@@ -54,10 +56,16 @@
         id="hero"
         class="bg-gray-100 lg:bg-transparent min-h-[20rem] lg:pb-20 flex justify-center items-center flex-wrap gap-4 pt-10"
       >
-        <img src="./assets/images/hero-image.jpg" alt="hero-image" class="absolute -z-10 hidden lg:block lg:brightness-50">
+        <img
+          src="./assets/images/hero-image.jpg"
+          alt="hero-image"
+          class="absolute -z-10 hidden lg:block lg:brightness-50"
+        />
         <article class="lg:text-white lg:filter-none">
           <h5 class="text-[16px] font-bold leading-6 text-center">Food app</h5>
-          <h2 class="p-[10px] text-4xl font-bold text-center leading-[42.5px] lg:px-40">
+          <h2
+            class="p-[10px] text-4xl font-bold text-center leading-[42.5px] lg:px-40"
+          >
             Why stay hungry when you can order form Bella Onojie
           </h2>
           <h4 class="p-[10px] text-2xl leading-[38px] text-center mx-16">
@@ -81,7 +89,9 @@
           </div>
         </div>
       </section>
-      <div class="bg-gray-100 max-w-lg lg:max-w-5xl lg:px-[20rem] lg:h-[20rem] lg:bg-white">
+      <div
+        class="bg-gray-100 max-w-lg lg:max-w-5xl lg:px-[20rem] lg:h-[20rem] lg:bg-white"
+      >
         <div class="relative -top-10 -left-10 lg:-top-40">
           <img src="./assets/images/phones.png" alt="phones" />
         </div>
@@ -89,50 +99,71 @@
       <!-- /hero -->
 
       <section
-      id="account"
-      class="bg-white min-h-[20rem] flex justify-center items-center"
-    >
-      <div
-        class="flex flex-col-reverse gap-y-8 py-8 md:flex-row md:mx-20 md:gap-5"
+        id="account"
+        class="bg-white min-h-[20rem] flex justify-center items-center"
       >
-        <!-- Image -->
-        <div class="flex justify-center items-center">
-          <img
-            src="./assets/images/create-account.png"
-            class="w-[650px] h-auto object-cover drop-shadow-2xl"
-          />
+        <div
+          class="flex flex-col-reverse gap-y-8 py-8 md:flex-row md:mx-20 md:gap-5"
+        >
+          <!-- Image -->
+          <div class="flex justify-center items-center">
+            <img
+              src="./assets/images/create-account.png"
+              class="w-[650px] h-auto object-cover drop-shadow-2xl"
+            />
+          </div>
+          <!-- Description -->
+          <div class="flex flex-col gap-y-8 justify-center items-center">
+            <h3
+              class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
+            >
+              Create an Account
+            </h3>
+            <h2
+              class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
+            >
+              Create/login to an existing account to get started
+            </h2>
+            <h4
+              class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+            >
+              An account is created with your email and a desired password
+            </h4>
+          </div>
         </div>
-        <!-- Description -->
-        <div class="flex flex-col gap-y-8 justify-center items-center">
-          <h3
-            class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
-          >
-            Create an Account
-          </h3>
-          <h2
-            class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
-          >
-            Create/login to an existing account to get started
-          </h2>
-          <h4
-            class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
-          >
-            An account is created with your email and a desired password
-          </h4>
-        </div>
-      </div>
-    </section>
+      </section>
 
-      <section
-        id="explore"
-        class="bg-gray-100 min-h-[20rem] container mx-auto md:flex items-center lg:max-w-3xl xl:max-w-5xl mt-24"
-      >
-        <div class="pl-6 pr-6 text-center md:text-start">
-          <h3 class="pb-4 font-bold text-2xl text-[#FA4A0C]">Explore while shopping</h1>
-          <h2 class="pb-6 font-bold text-4xl">Shop for your favorites meal as e dey hot.</h2>
-          <h4 class="text-2xl font-medium text-[#737373]">Shop for your favorite meals or drinks and enjoy while doing it.</h4>
+      <section id="explore" class="bg-white min-h-[20rem]">
+        <div
+          class="flex flex-col md:flex-row justify-center items-center gap-y-8 py-8"
+        >
+          <!-- Description -->
+          <div class="flex flex-col gap-y-8 px-3 justify-center items-center">
+            <h3
+              class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
+            >
+              Explore varieties
+            </h3>
+            <h2
+              class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
+            >
+              Shop for your favorites meal as e dey hot.
+            </h2>
+            <h4
+              class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+            >
+              Shop for your favorite meals or drinks and enjoy while doing it.
+            </h4>
+          </div>
+
+          <!-- Image -->
+          <div class="flex justify-center items-center">
+            <img
+              src="./assets/images/create-account.png"
+              class="w-full md:w-[650px] h-auto object-cover drop-shadow-2xl"
+            />
+          </div>
         </div>
-        <img src="assets/images/phone-explore.png" alt="" class="p-0">
       </section>
 
       <section
@@ -141,12 +172,16 @@
       >
         <div class="container mx-auto flex items-center justify-center">
           <div class="w-1/2">
-              <img src="assets/images/img-checkout.png" alt="checkout">
-          </div>                
+            <img src="assets/images/img-checkout.png" alt="checkout" />
+          </div>
           <div class="w-1/2">
-              <h4 class="text-orange-500 text-xl font-bold mb">Checkout</h4>
-              <h2 class="text-3xl font-bold mb-4">When you done check out and get it delivered.</h2>
-              <p class="text-lg">When you're done checking out, get it delivered with ease.</p>
+            <h4 class="text-orange-500 text-xl font-bold mb">Checkout</h4>
+            <h2 class="text-3xl font-bold mb-4">
+              When you done check out and get it delivered.
+            </h2>
+            <p class="text-lg">
+              When you're done checking out, get it delivered with ease.
+            </p>
           </div>
         </div>
       </section>
@@ -158,10 +193,13 @@
         >
           <h1 class="text-4xl font-bold e">Download the app now.</h1>
           <p class="text-zinc-400 text-2xl">
-            Most calendars are designed for teams. 
+            Most calendars are designed for teams.
           </p>
           <div class="flex justify-center items-center gap-3 pt-12">
-            <button type="button" class="bg-primary px-8 py-4 rounded-xl font-bold">
+            <button
+              type="button"
+              class="bg-primary px-8 py-4 rounded-xl font-bold"
+            >
               Buy Now
             </button>
             <button
@@ -174,19 +212,24 @@
         </div>
         <div class="flex justify-center items-center gap-3 py-4 pt-16">
           <a href="">
-              <div class="h-10 w-10 bg-cover bg-[url('/src/assets/images/twitter_logo.png')]">
-              </div>
-            </a>
-            <a href="">
-              <div class="h-10 w-10 mx-6 bg-cover bg-[url('/src/assets/images/fb_logo.png')]">
-              </div>
-            </a>
-            <a href="">
-              <div class="h-10 w-10 bg-cover bg-[url('/src/assets/images/linkedin_logo.png')]">
-              </div>
-            </a>
+            <div
+              class="h-10 w-10 bg-cover bg-[url('/src/assets/images/twitter_logo.png')]"
+            ></div>
+          </a>
+          <a href="">
+            <div
+              class="h-10 w-10 mx-6 bg-cover bg-[url('/src/assets/images/fb_logo.png')]"
+            ></div>
+          </a>
+          <a href="">
+            <div
+              class="h-10 w-10 bg-cover bg-[url('/src/assets/images/linkedin_logo.png')]"
+            ></div>
+          </a>
         </div>
-        <p class="pb-14 text-center text-dark font-medium">Just type what's on your mind and we'll</p>
+        <p class="pb-14 text-center text-dark font-medium">
+          Just type what's on your mind and we'll
+        </p>
       </footer>
       <!-- /footer -->
     </div>
