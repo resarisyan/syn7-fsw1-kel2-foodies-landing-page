@@ -590,44 +590,12 @@ video {
   left: -2.5rem;
 }
 
-.-top-24 {
-  top: -6rem;
-}
-
-.-top-20 {
-  top: -5rem;
-}
-
-.-top-16 {
-  top: -4rem;
-}
-
-.-top-14 {
-  top: -3.5rem;
-}
-
 .-top-10 {
   top: -2.5rem;
 }
 
 .-z-10 {
   z-index: -10;
-}
-
-.-z-\[1\] {
-  z-index: -1;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-30 {
-  z-index: 30;
 }
 
 .mx-16 {
@@ -665,26 +633,12 @@ video {
   height: 20px;
 }
 
-.h-\[390px\] {
-  height: 390px;
+.h-auto {
+  height: auto;
 }
 
 .h-full {
   height: 100%;
-}
-
-.h-fit {
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.max-h-fit {
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-.max-h-\[20rem\] {
-  max-height: 20rem;
 }
 
 .min-h-\[100vh\] {
@@ -721,6 +675,14 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-md {
+  max-width: 28rem;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-col {
@@ -839,10 +801,6 @@ video {
   background-image: url('/src/assets/images/twitter_logo.png');
 }
 
-.bg-\[url\(\'\.\/\.\.\/images\/hero-image\.jpg\'\)\] {
-  background-image: url('./../images/hero-image.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -939,6 +897,11 @@ video {
   font-size: 16px;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -954,11 +917,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-base {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -969,6 +927,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-5 {
+  line-height: 1.25rem;
 }
 
 .leading-6 {
@@ -985,10 +947,6 @@ video {
 
 .leading-\[42\.5px\] {
   line-height: 42.5px;
-}
-
-.leading-5 {
-  line-height: 1.25rem;
 }
 
 .text-\[\#FA4A0C\] {
@@ -1021,39 +979,9 @@ video {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
-.opacity-5 {
-  opacity: 0.05;
-}
-
 .drop-shadow-2xl {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.before\:relative::before {
-  content: var(--tw-content);
-  position: relative;
-}
-
-.before\:min-h-\[20rem\]::before {
-  content: var(--tw-content);
-  min-height: 20rem;
-}
-
-.before\:w-full::before {
-  content: var(--tw-content);
-  width: 100%;
-}
-
-.before\:min-w-full::before {
-  content: var(--tw-content);
-  min-width: 100%;
-}
-
-.before\:bg-black::before {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 @media not all and (min-width: 768px) {
@@ -1073,8 +1001,25 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
   .md\:max-w-5xl {
     max-width: 64rem;
+  }
+
+  .md\:max-w-full {
+    max-width: 100%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:gap-5 {
+    gap: 1.25rem;
   }
 
   .md\:gap-8 {
@@ -1091,29 +1036,18 @@ video {
     padding-bottom: 0.75rem;
   }
 
-  .md\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .lg\:-top-28 {
-    top: -7rem;
-  }
-
-  .lg\:-top-36 {
-    top: -9rem;
-  }
-
-  .lg\:-top-44 {
-    top: -11rem;
-  }
-
-  .lg\:-top-56 {
-    top: -14rem;
-  }
-
   .lg\:-top-40 {
     top: -10rem;
   }
@@ -1124,11 +1058,6 @@ video {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-fit {
-    height: -moz-fit-content;
-    height: fit-content;
   }
 
   .lg\:h-\[20rem\] {
@@ -1152,62 +1081,13 @@ video {
     border-color: rgb(255 255 255 / var(--tw-border-opacity));
   }
 
-  .lg\:bg-white {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
   .lg\:bg-transparent {
     background-color: transparent;
   }
 
-  .lg\:bg-\[url\(\'\.\/\.\.\/images\/hero-image\.jpg\'\)\] {
-    background-image: url('./../images/hero-image.jpg');
-  }
-
-  .lg\:bg-contain {
-    background-size: contain;
-  }
-
-  .lg\:bg-cover {
-    background-size: cover;
-  }
-
-  .lg\:bg-fixed {
-    background-attachment: fixed;
-  }
-
-  .lg\:bg-local {
-    background-attachment: local;
-  }
-
-  .lg\:bg-no-repeat {
-    background-repeat: no-repeat;
-  }
-
-  .lg\:px-\[50vw\] {
-    padding-left: 50vw;
-    padding-right: 50vw;
-  }
-
-  .lg\:px-20 {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  .lg\:px-\[50\%\] {
-    padding-left: 50%;
-    padding-right: 50%;
-  }
-
-  .lg\:px-\[20rem\] {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
-
-  .lg\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  .lg\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .lg\:px-40 {
@@ -1215,12 +1095,23 @@ video {
     padding-right: 10rem;
   }
 
-  .lg\:pb-10 {
-    padding-bottom: 2.5rem;
+  .lg\:px-\[20rem\] {
+    padding-left: 20rem;
+    padding-right: 20rem;
   }
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-white {
@@ -1233,18 +1124,7 @@ video {
     filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
   }
 
-  .lg\:brightness-100 {
-    --tw-brightness: brightness(1);
-    filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  }
-
   .lg\:filter-none {
     filter: none;
-  }
-
-  .lg\:backdrop-brightness-50 {
-    --tw-backdrop-brightness: brightness(.5);
-    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-            backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
   }
 }
