@@ -677,12 +677,8 @@ video {
   max-width: 32rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
-.max-w-full {
-  max-width: 100%;
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -723,6 +719,14 @@ video {
 
 .gap-y-8 {
   row-gap: 2rem;
+}
+
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-14 {
+  row-gap: 3.5rem;
 }
 
 .text-nowrap {
@@ -856,6 +860,26 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .pb-14 {
@@ -1006,8 +1030,8 @@ video {
     margin-right: 5rem;
   }
 
-  .md\:max-w-5xl {
-    max-width: 64rem;
+  .md\:w-\[650px\] {
+    width: 650px;
   }
 
   .md\:max-w-full {
@@ -1034,6 +1058,11 @@ video {
   .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .md\:text-2xl {
