@@ -13,7 +13,7 @@
     </style>
   </head>
   <body class="bg-gray-50">
-    <div class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-lg lg:max-w-5xl">
+    <div class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-lg md:max-w-full">
       <!-- navbar -->
       <nav class="bg-white">
         <div class="flex justify-between items-center p-6">
@@ -89,29 +89,39 @@
       <!-- /hero -->
 
       <section
-        id="account"
-        class="bg-white min-h-[20rem] flex justify-center items-center"
+      id="account"
+      class="bg-white min-h-[20rem] flex justify-center items-center"
+    >
+      <div
+        class="flex flex-col-reverse gap-y-8 py-8 md:flex-row md:mx-20 md:gap-5"
       >
-        <div class="flex flex-col-reverse gap-y-8 py-8">
-          <!-- Image -->
-          <div class="flex justify-center items-center">
-            <img
-              src="./assets/images/create-account.png"
-              class="w-[650px] h-[390px] object-cover drop-shadow-2xl"
-            />
-          </div>
-          <!-- Description -->
-          <div class="flex flex-col gap-y-8 justify-center items-center">
-            <h3 class="text-sm font-bold text-[#FA4A0C]">Create an Account</h3>
-            <h2 class="text-2xl font-bold text-dark text-center">
-              Create/login to an existing account to get started
-            </h2>
-            <h4 class="font-medium text-gray-500 text-sm">
-              An account is created with your email and a desired password
-            </h4>
-          </div>
+        <!-- Image -->
+        <div class="flex justify-center items-center">
+          <img
+            src="./assets/images/create-account.png"
+            class="w-[650px] h-auto object-cover drop-shadow-2xl"
+          />
         </div>
-      </section>
+        <!-- Description -->
+        <div class="flex flex-col gap-y-8 justify-center items-center">
+          <h3
+            class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
+          >
+            Create an Account
+          </h3>
+          <h2
+            class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
+          >
+            Create/login to an existing account to get started
+          </h2>
+          <h4
+            class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+          >
+            An account is created with your email and a desired password
+          </h4>
+        </div>
+      </div>
+    </section>
 
       <section
         id="explore"
