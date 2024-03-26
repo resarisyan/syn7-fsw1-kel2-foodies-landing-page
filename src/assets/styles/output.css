@@ -673,6 +673,10 @@ video {
   width: 450px;
 }
 
+.w-\[650px\] {
+  width: 650px;
+}
+
 .max-w-\[450px\] {
   max-width: 450px;
 }
@@ -683,6 +687,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
