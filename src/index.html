@@ -16,7 +16,7 @@
     <div class="min-h-[100vh] bg-white lg:bg-transparent mx-auto max-w-full">
       <!-- navbar -->
       <nav class="bg-white">
-        <div class="flex justify-between items-center p-6">
+        <div class="flex justify-between items-center p-6 mx-16">
           <div class="w-[104px]">
             <img
               src="./assets/images/logo.png"
@@ -25,9 +25,9 @@
           </div>
           <div class="hidden lg:block">
             <ul
-              class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap leading-5 gap-4 md:gap-8 md:px-4 md:py-3 font-semibold text-base"
+              class="flex flex-wrap max-md:before:content-['BCR'] max-md:before:font-bold text-nowrap leading-5 gap-4 md:gap-y-8 md:gap-x-20 md:px-4 md:py-3 font-semibold text-base"
             >
-              <li class="max-md:w-full text-[#FA4A0C]">
+              <li class="max-md:w-full text-primary">
                 <a href="/">Home</a>
               </li>
               <li class="max-md:w-full"><a href="#Product">Product</a></li>
@@ -62,7 +62,7 @@
         <article class="lg:text-white lg:filter-none">
           <h5 class="text-[16px] font-bold leading-6 text-center">Food app</h5>
           <h2
-            class="p-[10px] text-4xl font-bold text-center leading-[42.5px] lg:px-40"
+            class="p-[10px] text-2xl font-bold text-center leading-[42.5px] lg:px-40"
           >
             Why stay hungry when you can order form Bella Onojie
           </h2>
@@ -73,21 +73,21 @@
         <div class="flex flex-wrap gap-4 lg:flex-nowrap lg:text-nowrap">
           <div class="w-full flex justify-center">
             <button
-              class="bg-[#FA4A0C] text-white font-bold text-2xl leading-9 px-14 py-3 rounded-full"
+              class="bg-primary text-white font-bold text-2xl leading-9 px-14 py-3 rounded-full"
             >
               Playstore
             </button>
           </div>
           <div class="w-full flex justify-center">
             <button
-              class="text-[#FA4A0C] border-[#FA4A0C] lg:text-white lg:border-white border-[1px] text-2xl leading-9 px-14 py-3 rounded-full"
+              class="text-primary border-primary lg:text-white lg:border-white border-[1px] text-2xl leading-9 px-14 py-3 rounded-full"
             >
               App store
             </button>
           </div>
         </div>
         <div
-          class="hidden lg:block absolute bottom-0 w-full md:w-[640px] translate-y-[45%] lg:translate-y-[50%] translate-x-[-5%] pb-12"
+          class="hidden lg:block absolute bottom-0 w-full md:w-[640px] translate-y-[50%] translate-x-[-5%] pb-12"
         >
           <img src="./assets/images/phones.png" alt="phones" />
         </div>
@@ -105,30 +105,26 @@
         class="bg-white flex flex-col-reverse lg:flex-col justify-center items-center gap-y-10 lg:mt-[640px] mb-16"
       >
         <div class="w-full lg:w-1/2 mx-auto border-2 border-gray-400"></div>
-        <h2 class="text-2xl text-dark text-center md:text-4xl font-bold">
-          How the app works
-        </h2>
+        <h2 class="text-2xl text-dark font-bold">How the app works</h2>
       </div>
       <!-- /hero -->
 
       <section id="account" class="bg-white min-h-[20rem]">
         <div
-          class="flex flex-col md:flex-row-reverse justify-center items-center gap-y-8 py-8 md:mx-20 lg:mx-36 md:gap-5"
+          class="flex flex-col lg:flex-row-reverse justify-center items-center gap-y-8 py-8 lg:mx-32 lg:gap-5 mx-10"
         >
           <!-- Description -->
-          <div class="flex flex-col gap-y-8 px-3 justify-center items-center">
-            <h3
-              class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
-            >
+          <div
+            class="flex flex-col gap-y-8 px-3 justify-center items-center lg:justify-start lg:items-start"
+          >
+            <h3 class="text-md font-bold text-primary lg:text-xl">
               Create an Account
             </h3>
-            <h2
-              class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
-            >
+            <h2 class="text-2xl font-bold text-dark">
               Create/login to an existing account to get started
             </h2>
             <h4
-              class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+              class="font-medium text-gray-500 text-center text-md lg:text-start"
             >
               An account is created with your email and a desired password
             </h4>
@@ -146,22 +142,20 @@
 
       <section id="explore" class="bg-white min-h-[20rem]">
         <div
-          class="flex flex-col md:flex-row justify-center items-center gap-y-8 py-8 md:mx-20 lg:mx-36 md:gap-5"
+          class="flex flex-col lg:flex-row justify-center items-center gap-y-8 py-8 lg:mx-32 lg:gap-5 mx-10"
         >
           <!-- Description -->
-          <div class="flex flex-col gap-y-8 px-3 justify-center items-center">
-            <h3
-              class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
-            >
+          <div
+            class="flex flex-col gap-y-8 px-3 justify-center items-center lg:justify-start lg:items-start"
+          >
+            <h3 class="text-md font-bold text-primary lg:text-xl">
               Explore varieties
             </h3>
-            <h2
-              class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
-            >
+            <h2 class="text-2xl font-bold text-dark">
               Shop for your favorites meal as e dey hot.
             </h2>
             <h4
-              class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+              class="font-medium text-gray-500 text-center text-md lg:text-start"
             >
               Shop for your favorite meals or drinks and enjoy while doing it.
             </h4>
@@ -179,22 +173,18 @@
 
       <section id="checkout" class="bg-white min-h-[20rem]">
         <div
-          class="flex flex-col md:flex-row-reverse justify-center items-center gap-y-8 py-8 md:mx-20 lg:mx-36 md:gap-5"
+          class="flex flex-col lg:flex-row-reverse justify-center items-center gap-y-8 py-8 lg:mx-32 lg:gap-5 mx-10"
         >
           <!-- Description -->
-          <div class="flex flex-col gap-y-8 px-3 justify-center items-center">
-            <h3
-              class="text-sm font-bold text-[#FA4A0C] text-center md:text-lg lg:text-xl"
-            >
-              Checkout
-            </h3>
-            <h2
-              class="text-2xl font-bold text-dark text-center md:text-2xl lg:text-4xl"
-            >
+          <div
+            class="flex flex-col gap-y-8 px-3 justify-center items-center lg:justify-start lg:items-start"
+          >
+            <h3 class="text-md font-bold text-primary lg:text-xl">Checkout</h3>
+            <h2 class="text-2xl font-bold text-dark">
               When you done check out and get it delivered.
             </h2>
             <h4
-              class="font-medium text-gray-500 text-center text-sm md:text-md lg:text-xl"
+              class="font-medium text-gray-500 text-center text-md lg:text-start"
             >
               When you done check out and get it delivered with ease.
             </h4>
@@ -215,7 +205,7 @@
         <div
           class="bg-dark text-center flex flex-col gap-6 px-5 py-28 text-white lg:bg-center lg:bg-[linear-gradient(to_right,rgba(37,43,66,0.3),rgba(37,43,66,0.3)),url('/src/assets/images/footer-bg.jpeg')]"
         >
-          <h1 class="text-4xl font-bold e lg:text-white">
+          <h1 class="text-2xl font-bold e lg:text-white">
             Download the app now.
           </h1>
           <p class="text-zinc-400 px-5 text-2xl block lg:hidden">
@@ -248,17 +238,17 @@
             <div
               class="flex justify-center items-center gap-3 py-4 pt-16 lg:py-0"
             >
-              <a href="">
+              <a href="javascript:void(0)">
                 <div
                   class="h-10 w-10 bg-cover bg-[url('/src/assets/images/twitter-logo.png')]"
                 ></div>
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <div
                   class="h-10 w-10 mx-6 bg-cover bg-[url('/src/assets/images/fb-logo.png')]"
                 ></div>
               </a>
-              <a href="">
+              <a href="javascript:void(0)">
                 <div
                   class="h-10 w-10 bg-cover bg-[url('/src/assets/images/linkedin-logo.png')]"
                 ></div>
@@ -275,6 +265,5 @@
       </footer>
       <!-- /footer -->
     </div>
-    <script src="./app.js"></script>
   </body>
 </html>
